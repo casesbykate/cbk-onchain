@@ -5,7 +5,7 @@ import Klaytn from "./Klaytn";
 class CBKOnChainContract extends Contract {
 
     constructor() {
-        super("", require("./CBKOnChainContractABI.json"));
+        super("0x8Ce0E8f3219145a74A8f55BD752ddfB5788BDBcF", require("./CBKOnChainContractABI.json"));
     }
 
     public async setCase(id: BigNumberish, _case: string): Promise<void> {
